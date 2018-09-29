@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeEDDocs.App"
+             xmlns:light="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Light"
+            xmlns:dark="clr-namespace:Xamarin.Forms.Themes;assembly=Xamarin.Forms.Theme.Dark">
+	<Application.Resources>
+        <ResourceDictionary>
+
+            <Color x:Key="backgroundColor">White</Color>
+            <Color x:Key="textColor">Black</Color>
+            <Color x:Key="subHeadingTextColor">DarkGray</Color>
+            <Color x:Key="inputBackgroundColor">White</Color>
+
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BorderColor" Value="#8bc53f" />
+                <Setter Property="BorderRadius" Value="5" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="BackgroundColor" Value="#8bc53f"/>
+                <Setter Property="HeightRequest" Value="45"/>
+                <Setter Property="WidthRequest" Value="110" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="5,5,5,5"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+            <!--ListView Styles-->
+            <Style x:Key="GridHeaderStyle" TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="DarkGray" />
+            </Style>
+            <Style x:Key="GroupHeaderStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="FontSize" Value="22"/>
+                <!--left, top, right, bottom-->
+                <Setter Property="Margin" Value="5,0,0,0"/>
+            </Style>
+            <Style x:Key="ListViewItemCaptionStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Margin" Value="10,5,5,0"/>
+            </Style>
+            <Style x:Key="ListViewItemDetailCaptionStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource subHeadingTextColor}" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Margin" Value="10,1,1,5"/>
+            </Style>
+            <!--End ListView Styles-->
+            <Style x:Key="TabBarStyle" TargetType="TabbedPage">
+                <Setter Property="BarBackgroundColor" Value="#8bc53f" />
+            </Style>
+
+            <Style x:Key="FormLabelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="FontSize" Value="18"/>
+                <Setter Property="Margin" Value="10,1,1,1"/>
+            </Style>
+
+            <Style x:Key="HelpBodyText" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Margin" Value="10,1,10,1"/>
+            </Style>
+
+            <Style x:Key="SubheadingStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="Margin" Value="10,1,1,1"/>
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#8bc53f"/>
+                <Setter Property="BarTextColor" Value="White"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource backgroundColor}" />
+            </Style>
+            
+            <Style TargetType="Picker">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="Margin" Value="10,0,10,1"/>
+                <Setter Property="FontSize"  Value="16"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource inputBackgroundColor}"/>
+            </Style>
+            
+            <Style TargetType="Entry">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="Margin" Value="10,0,10,1"/>
+                <Setter Property="FontSize"  Value="16"/>
+                <Setter Property="PlaceholderColor" Value ="DarkGray"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource inputBackgroundColor}"/>
+            </Style>
+
+            <Style TargetType="Editor">
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+                <Setter Property="FontSize"  Value="16"/>
+                <Setter Property="BackgroundColor" Value="{DynamicResource inputBackgroundColor}"/>
+            </Style>
+
+            <Style x:Key="DividerStyle" TargetType="BoxView">
+                <Setter Property="Margin" Value="2,2,2,2"/>
+                <Setter Property="Color" Value="Black"/>
+                <Setter Property="HeightRequest" Value="2"/>
+            </Style>
+
+            <Style x:Key="backgroundStyle" TargetType="VisualElement">
+                <Setter Property="BackgroundColor" Value="{DynamicResource backgroundColor}" />
+            </Style>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{DynamicResource backgroundColor}" />
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
